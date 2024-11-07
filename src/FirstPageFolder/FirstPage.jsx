@@ -33,9 +33,6 @@ const FirstPage = () => {
                     <Card name="Jamie" role = "Technical Associate" headshot={jamieHeadshot}></Card>
                     <Card name="Luke" headshot={lukeHeadshot} role="Technical Associate"></Card>
                 </div>
-                
-
-                
 
                 <div className="SecondRow">
                     <Card name="Brian" role="Technical Associate" headshot={checkImage}></Card>
