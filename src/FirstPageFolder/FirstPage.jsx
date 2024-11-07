@@ -3,7 +3,8 @@ import lukeHeadshot from '../assets/IMG_1399.jpeg'
 import checkImage from '../assets/heartimage.webp'
 import jamieHeadshot from '../assets/IMG_1142.png'
 import sahilHeadShot from '../assets/aischeadshot.jpg'
-
+import yashHeadshot from '../assets/YashHeadshot.jpeg'
+import rachieHeadshot from '../assets/rachieHeadshot.jpg'
 
 function Card(props) {
     return (
@@ -38,6 +39,8 @@ const FirstPage = () => {
 
                 <div className="SecondRow">
                     <Card name="Brian" role="Technical Associate" headshot={checkImage}></Card>
+                    <Card name="Yash" role="Technical Associate" headshot={yashHeadshot}></Card>
+                    <Card name="Rachie" role="Technical Associate" headshot={rachieHeadshot}></Card>
                 </div>
             
             </div>
