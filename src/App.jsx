@@ -1,4 +1,3 @@
-import FirstPage from './FirstPageFolder/FirstPage.jsx'
 import './App.css'
 import FirstPage from './FirstPageFolder/FirstPage.jsx'
 

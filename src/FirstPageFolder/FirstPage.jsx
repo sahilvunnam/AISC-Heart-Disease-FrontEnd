@@ -1,8 +1,5 @@
 import './FirstPage.css'
-
-
-import lukeHeadshot from '../assests/IMG_1399.jpeg'
-
+import lukeHeadshot from '../assets/IMG_1399.jpeg'
 import checkImage from '../assets/heartimage.webp'
 import jamieHeadshot from '../assets/IMG_1142.png'
 import sahilHeadShot from '../assets/aischeadshot.jpg'
@@ -32,7 +29,7 @@ const FirstPage = () => {
             <div>
                 <div className="FirstRow">
                     <Card name="Sahil" role="Project Manager" headshot={sahilHeadShot}/>
-                    <Card name="Jamie" role = "Technical Associate" headshot={checkImage}></Card>
+                    <Card name="Jamie" role = "Technical Associate" headshot={jamieHeadshot}></Card>
                     <Card name="Luke" headshot={lukeHeadshot} role="Technical Associate"></Card>
                 </div>
                 
@@ -42,13 +39,8 @@ const FirstPage = () => {
                 <div className="SecondRow">
                     <Card name="Brian" role="Technical Associate" headshot={checkImage}></Card>
                 </div>
-
             
             </div>
-
-
-
-
         </div>
 
     );
