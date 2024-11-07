@@ -1,5 +1,6 @@
 import './FirstPage.css'
 import checkImage from '../assets/heartimage.webp'
+import jamieHeadshot from '../assets/IMG_1142.png'
 import sahilHeadShot from '../assets/aischeadshot.jpg'
 
 function Card(props) {
@@ -15,13 +16,17 @@ function Card(props) {
 const FirstPage = () => {
     return (
         <div className="FirstPage">
-
             <div className="title-div">
                 <h1 className="title">Heart Disease Predictor</h1>
                 <h3 className="subtitle">Team Heart Attack</h3>
             </div>
 
             <div>
+                <div className="FirstRow">
+                    <Card name="Jamie" role = "Technical Associate" headshot={checkImage}></Card>
+                </div>
+                
+                <div className="SecondRow">
 
                 <div className="FirstRow">
                     <Card name="Sahil" role="Project Manager" headshot={sahilHeadShot}/>
@@ -37,7 +42,10 @@ const FirstPage = () => {
 
 
 
+                </div>
+            </div>
         </div>
+
     );
 }
 
