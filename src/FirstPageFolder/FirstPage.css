@@ -1,3 +1,4 @@
+
 .FirstPage {
     top: 0;
     left: 0;
@@ -5,7 +6,13 @@
     height: 100vh;
     position: fixed;
     background-color: black;
-    background-image: url('../assests/heart.jpg');
+
+
+
+
+    background-image: url('../assets/heart.jpg');
+
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,9 +23,11 @@
     margin: 30px 0px;
 }
 
-.subtitle {
+
+.subtitle{
     font-size: 40px;
-    margin: 20px;
+    margin-bottom: 20px;
+
 }
 
 .FirstRow, .SecondRow {
@@ -37,9 +46,11 @@
     padding: 10px;
 }
 
-.Headshot {
-    width: 150px;
-    height: 150px;
+
+.headshot {
+    width: 175px;
+    height: 175px;
+
     border-radius: 100%;
     object-fit: cover;
     margin-bottom: 5px;

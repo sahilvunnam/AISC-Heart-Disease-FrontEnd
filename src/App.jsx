@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import FirstPage from './FirstPageFolder/FirstPage.jsx'
 import './App.css'
 import FirstPage from './FirstPageFolder/FirstPage.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
         <FirstPage/>
       </div>
     </>
-  )
+  );
 }
 
 export default App
