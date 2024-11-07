@@ -1,17 +1,25 @@
 import './FirstPage.css'
+
+
+import lukeHeadshot from '../assests/IMG_1399.jpeg'
+
 import checkImage from '../assets/heartimage.webp'
 import jamieHeadshot from '../assets/IMG_1142.png'
 import sahilHeadShot from '../assets/aischeadshot.jpg'
+
 
 function Card(props) {
     return (
         <div className="Card">
             <img className="headshot" src={props.headshot}></img>
-            <h3 className="name">{props.name}</h3>
+
+            <h3 className="name"></h3>
             <p className="role">{props.role}</p>
         </div>
-    );
+    )
 }
+
+
 
 const FirstPage = () => {
     return (
@@ -23,15 +31,13 @@ const FirstPage = () => {
 
             <div>
                 <div className="FirstRow">
+                    <Card name="Sahil" role="Project Manager" headshot={sahilHeadShot}/>
                     <Card name="Jamie" role = "Technical Associate" headshot={checkImage}></Card>
+                    <Card name="Luke" headshot={lukeHeadshot} role="Technical Associate"></Card>
                 </div>
                 
-                <div className="SecondRow">
 
-                <div className="FirstRow">
-                    <Card name="Sahil" role="Project Manager" headshot={sahilHeadShot}/>
-                    
-                </div>
+                
 
                 <div className="SecondRow">
                     <Card name="Brian" role="Technical Associate" headshot={checkImage}></Card>
@@ -42,10 +48,11 @@ const FirstPage = () => {
 
 
 
-                </div>
+
         </div>
 
     );
 }
 
 export default FirstPage;
+
