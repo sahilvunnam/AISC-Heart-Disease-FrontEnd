@@ -1,6 +1,7 @@
 import './FirstPage.css'
 import checkImage from '../assets/heartimage.webp'
 import jamieHeadshot from '../assets/IMG_1142.png'
+import sahilHeadShot from '../assets/aischeadshot.jpg'
 
 function Card(props) {
     return (
@@ -26,6 +27,20 @@ const FirstPage = () => {
                 </div>
                 
                 <div className="SecondRow">
+
+                <div className="FirstRow">
+                    <Card name="Sahil" role="Project Manager" headshot={sahilHeadShot}/>
+                    
+                </div>
+
+                <div className="SecondRow">
+                    <Card name="Brian" role="Technical Associate" headshot={checkImage}></Card>
+                </div>
+
+            
+            </div>
+
+
 
                 </div>
             </div>

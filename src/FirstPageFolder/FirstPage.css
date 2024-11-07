@@ -6,8 +6,11 @@
     height: 100vh;
     position: fixed;
     background-color: black;
-    background-image: url('../assets/heartimage.webp');
-    background-repeat: no-repeat;
+
+
+
+    background-image: url('../assets/heart.jpg');
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,6 +32,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px 0px;
+    gap: 100px;
 }
 
 .Card {
@@ -42,14 +46,15 @@
     width: 175px;
     height: 175px;
     border-radius: 100%;
-    object-fit: cover;margin-bottom: 5px;
+    object-fit: cover;
+    margin-bottom: 5px;
 }
 
 .name {
     font-size: 30px;
-
+    margin-bottom: 5px;
 }
 
-.rold {
+.role {
     font-size: 20px;
 }
