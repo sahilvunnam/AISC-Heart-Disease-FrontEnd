@@ -4,18 +4,10 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     background-color: black;
-
-
-
-
     background-image: url('../assets/heart.jpg');
-
-
-    background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .title {
@@ -63,4 +55,57 @@
 
 .role {
     font-size: 20px;
+}
+
+.SecondPage {
+    margin-top: 96vh;
+    width: 80vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.label-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.label-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.label-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.label-button:hover {
+    background-color: #e0e0e0;
+}
+
+.image-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.display-image {
+    width: 700;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }

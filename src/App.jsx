@@ -5,8 +5,8 @@ function App() {
   return (
     <>
       <div>
-        <FirstPage/>
-      </div>
+            <FirstPage/>
+        </div>
     </>
   );
 }
