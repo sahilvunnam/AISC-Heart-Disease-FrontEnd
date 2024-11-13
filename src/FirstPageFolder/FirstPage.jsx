@@ -25,6 +25,7 @@ function Card({ headshot, name, role }) {
 
 const FirstPage = () => {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedAccuracy, setSelectedAccuracy] = useState(null);
 
     // Map of labels to images
     const images = {
@@ -33,6 +34,15 @@ const FirstPage = () => {
         FSB: fsbImage,
         FSBHD: fsbHDImage,
         Thal: thalImage
+    };
+
+    // Map of ML Models to accuracies
+    const accuracies = {
+        DecisionTree: 99.03,
+        RandomForest: 100.00,
+        KNNModel: 93.18,
+        SupportVector: 75.00,
+        NaiveBayes: 88.31,
     };
 
     return (
@@ -79,9 +89,23 @@ const FirstPage = () => {
             </div>
 
             <div className="ThirdPage">
-                <div>
-                    
+                <div className="third-page-container">
+                    {Object.keys(accuracies).map((label) => (
+                        <button
+                            key={label}
+                            onClick={() => setSelectedAccuracy(accuracies[label])}
+                            className={`accuracy-button ${selectedAccuracy == accuracies[label] ? 'active' : ''}`}
+                        >
+                            {label}
+                        </button>
+                    ))}
                 </div>
+
+                {selectedAccuracy != null && (
+                    <div className="accuracy-display">
+                        <p>Model Accuracy: {selectedAccuracy}</p>
+                    </div>
+                )}
             </div>
         </>
     );
