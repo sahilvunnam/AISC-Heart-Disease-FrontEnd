@@ -79,7 +79,9 @@ const FirstPage = () => {
             </div>
 
             <div className="ThirdPage">
-
+                <div>
+                    
+                </div>
             </div>
         </>
     );
