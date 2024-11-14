@@ -6,6 +6,7 @@ import jamieHeadshot from '../assets/IMG_1142.png';
 import sahilHeadShot from '../assets/aischeadshot.jpg';
 import yashHeadshot from '../assets/YashHeadshot.jpeg';
 import rachieHeadshot from '../assets/rachieHeadshot.jpg';
+import brianHeadshot from '../assets/brianHeadshot.jpeg'
 
 import ageImage from '../assets/AISCAge.png';
 import chestPainImage from '../assets/AISCChestPain.png';
@@ -61,7 +62,7 @@ const FirstPage = () => {
                     </div>
 
                     <div className="SecondRow">
-                        <Card name="Brian" role="Technical Associate" headshot={checkImage} />
+                        <Card name="Brian" role="Technical Associate" headshot={brianHeadshot} />
                         <Card name="Yash" role="Technical Associate" headshot={yashHeadshot} />
                         <Card name="Rachie" role="Technical Associate" headshot={rachieHeadshot} />
                     </div>
